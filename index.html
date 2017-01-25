@@ -1,13 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>Music History</title>
 </head>
 
-<body>
+<body class="container-fluid">
+	<header class="col-md-12 top">
+		<nav>
+			<ul>
+				<li><a href="#">View Music | </a></li>
+				<li><a href="#">Add Music | </a></li>
+				<li><a href="#">Profile</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section class="col-md-3 main">
+		<p>Song length:</p>
+	 		<input type="range" min="0" max="10" value="0" step="1" />
+		<p>Artist:</p>
+		    <select name="artist">
+		        <option value="Ryan Adams">Ryan Adams</option>
+		        <option value="Brandi Carlile">Brandi Carlile</option>
+		        <option value="Bon Iver">Bon Iver</option>
+		        <option value="Jim James">Jim James</option>
+		        <option value="Tame Impala">Tame Impala</option>
+		    </select>
+
+		<div class="album">
+			<p>Album:</p>
+		        <select name="album" class="album">
+		        	<option value="22, A Million">22, A Million</option>
+		        	<option value="Bon Iver">Bon Iver</option>
+		        	<option value="Brandi Carlile">Brandi Carlile</option>
+		          	<option value="Cold Roses">Cold Roses</option>
+		          	<option value="Currents">Currents</option>
+		          	<option value="Eternally Even">Eternally Even</option>
+		          	<option value="Gold">Gold</option>
+		          	<option value="Love Is Hell">Love Is Hell</option>
+		          	<option value="The Story">The Story</option>
+		        </select>
+		    <div>   
+    		<p>Genre:</p>
+    			<div class="leftgen col-md-4">
+			    	<div class="checkbox">
+					  	<label>
+					  		<input type="checkbox" value="">Rock
+					  	</label>
+					</div>
+					<div class="checkbox">
+					  	<label>
+					  		<input type="checkbox" value="">Pop 
+					  	</label>
+					</div>
+					<div class="checkbox">
+					  	<label>
+					  		<input type="checkbox" value="">Rock
+					  	</label>
+					</div>
+				</div>
+
+				<div class="rightgen col-md-4">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">Classical
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">Hip-hop 
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">Blues
+						</label>
+					</div>
+				</div>
+	    </div>
+	    <footer class="filterButton btn btn-default">
+	    	<a href="#" role="button">Filter</a>
+	    </footer>
+	</section>
 
 
+	<section class="col-md-8 fave">
+		<h3>A list of songs</h3>
+  		<div id="finalList"></div>
+    </section>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/songs.js"></script>
 </body>
 </html>
+
