@@ -1,13 +1,119 @@
-<!doctype html>
+
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>Music History</title>
 </head>
 
 <body>
+	<header class="top">
+			<nav>
+				<ul>
+					<li><a href="#" id="list-link">List Music | </a></li>
+					<li><a href="#" id="add-link">Add Music</a></li>
+				</ul>
+			</nav>
+	</header>
 
+<div id="listMusicView">
+	<section class="main">
+ 	<div class="artist">
+ 		<p>Song length:</p>
+ 			<div class="slider">
+ 			<input type="range" min="0" max="15" value="0" step="1" />
+ 			</div>
+		<p>Artist:</p>
+	        <select name="artist">
+	          <option value="Ryan Adams">Ryan Adams</option>
+	          <option value="Brandi Carlile">Brandi Carlile</option>
+	          <option value="Bon Iver">Bon Iver</option>
+	          <option value="Jim James">Jim James</option>
+	          <option value="Tame Impala">Tame Impala</option>
+	        </select>
+    </div>
 
+    <div class="album">
+		<p>Album:</p>
+	        <select name="album" class="album">
+	        	<option value="22, A Million">22, A Million</option>
+	        	<option value="Bon Iver">Bon Iver</option>
+	        	<option value="Brandi Carlile">Brandi Carlile</option>
+	          	<option value="Cold Roses">Cold Roses</option>
+	          	<option value="Currents">Currents</option>
+	          	<option value="Eternally Even">Eternally Even</option>
+	          	<option value="Gold">Gold</option>
+	          	<option value="Love Is Hell">Love Is Hell</option>
+	          	<option value="The Story">The Story</option>
+	        </select>
+    </div>
+    	<p>Genre:</p>
+    		<div class="leftgen">
+		  		<ul>
+		        	<li><input type="checkbox" id="cbrock" value="Rock">Rock</li>
+		        	<li><input type="checkbox" id="cppop" value="Pop">Pop</li>
+					<li><input type="checkbox" id="cbfolk" value="Folk">Folk</li>
+				</ul>
+			</div>
+			<div class="rightgen">
+				<ul>
+		        	<li><input class="checkbox" type="checkbox" name="Classical" value="Classical">Classical</li>
+		        	<li><input type="checkbox" name="hip-hop" value="hip-hop">Hip hop</li>
+		        	<li><input type="checkbox" name="blues" value="blues">Blues</li>
+		        </ul>
+		        <footer>
+    				<button>Filter</button>
+    			</footer>
+		    </div>
+
+    </section>
+   
+    <div class="finalList">
+    </div>
+
+    <div class="fave">
+    	<h3 class="title">Now That You're Gone</h3>
+    	<p class="specs">
+    		<aside>Ryan Adams | Cold Roses | Rock </aside>
+    	</p>
+
+    	<h3 class="title">New Person, Same Old Mistakes</h3>
+    		<p class="specs">
+    			<aside>Tame Impala | Currents | Rock</aside>
+    		</p>
+
+    	<h3 class="title">Here in Spirit</h3>
+    		<p class="specs">
+    			<aside>Jim James | Eternally Even | Rock</aside>
+    		</p>
+
+    	<h3 class="title">Turpentine</h3>
+    		<p class="specs">
+    			<aside>Brandi Carlile | The Story | Folk</aside>
+    		</p>
+    	<div id="outputTarget"></div>
+    </div>
+</div>
+
+<div id="addMusicView" class="hidden">
+	<label>Song name:
+	<input type="text" id="addedSong">
+	</label>
+	<br><br>
+	<label>Artist:
+	<input type="text" id="addedArtist">
+	</label>
+	<br><br>
+	<label>Album:
+	<input type="text" id="addedAlbum">
+	</label>
+	<br><br>
+	<button id="addButton">Add</button>
+</div>
+
+	<script src="javascripts/listMusic.js" type="text/javascript"></script>
+	<script src="javascripts/addMusic.js" type="text/javascript"></script>
 </body>
 </html>
