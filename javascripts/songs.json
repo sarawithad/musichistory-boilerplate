@@ -1,0 +1,40 @@
+{
+    "songs": [
+        {
+            "song": "All Night",
+            "artist": "Chance the Rapper",
+            "album": "Coloring Book"
+        },
+
+        {
+            "song": "Darling",
+            "artist": "Real Estate",
+            "album": "In Mind"
+        },
+
+        {
+            "song": "You're Mine",
+            "artist": "Phantogram",
+            "album": "Three"
+        },
+
+        {
+            "song": "Real Love Baby",
+            "artist": "Father John Misty",
+            "album": "Real Love Baby"
+        },
+
+        {
+            "song": "Youth",
+            "artist": "Glass Animals",
+            "album": "How to Be a Human Being"
+        },
+
+        {
+            "song": "Instant Crush",
+            "artist": "Daft Punk feat. Julian Casablancas",
+            "album": "Random Access Memories"
+        }
+    ]
+
+}
